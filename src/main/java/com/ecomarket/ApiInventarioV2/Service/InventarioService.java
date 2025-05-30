@@ -2,6 +2,7 @@ package com.ecomarket.ApiInventarioV2.Service;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.ecomarket.ApiInventarioV2.Model.Inventario;
@@ -10,6 +11,7 @@ import com.ecomarket.ApiInventarioV2.Repository.InventarioRepository;
 @Service
 public class InventarioService {
 
+    @Autowired
     private InventarioRepository inventarioRepository;
 
     public List<Inventario> obtenerTodos() {

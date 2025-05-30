@@ -2,6 +2,7 @@ package com.ecomarket.ApiInventarioV2.Controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -20,6 +21,7 @@ import com.ecomarket.ApiInventarioV2.Service.InventarioService;
 @RequestMapping("/api/inventario")
 public class InventarioController {
 
+    @Autowired
     private InventarioService inventarioService;
 
     @GetMapping
