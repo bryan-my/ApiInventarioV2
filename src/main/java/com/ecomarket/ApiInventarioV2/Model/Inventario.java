@@ -1,5 +1,7 @@
 package com.ecomarket.ApiInventarioV2.Model;
 
+import org.springframework.hateoas.RepresentationModel;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,7 +19,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "inventario")
 @NoArgsConstructor
 @AllArgsConstructor
-public class Inventario {
+public class Inventario extends RepresentationModel<Inventario>{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
